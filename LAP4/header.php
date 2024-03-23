@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="trendemy.com" />
-    <link href="site.css" rel="stylesheet" />
+    <link href="site.css" rel="stylesheet" /><!-- Link to CSS file to format a website -->
     <title>Object Oriented Programming PHP</title>
 </head>
 <body>

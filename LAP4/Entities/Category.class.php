@@ -4,10 +4,10 @@ require_once(__DIR__ . "/../config/db.class.php");
 
 class Category
 {
-    public $cateId;
-    public $cateName;
-    public $cateDes;
-
+    public $cateId; // Archive the ID of the category
+    public $cateName;// Category name archive variable.
+    public $cateDes;// Category description archive variable.
+    // Hthe initialization function for the Category class, setting the name and description.
     public function __construct(
         $cate_name,
         $cate_des,

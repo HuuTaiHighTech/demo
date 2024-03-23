@@ -1,13 +1,13 @@
 <?php
-require_once('../lap4/entities/product.class.php');
+require_once('../lap4/entities/product.class.php');//Include the Product class from the Entities folder.
 ?>
 <?php
 include_once('../lap4/header.php');
-$prods = Product::list_product();
+$prods = Product::list_product();// Get a list of all products from the database.
 ?>
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12"><!-- Show product list in a HTML table. -->
             <table border="1" class="table">
                 <tr>
                     <td>Picture</td>

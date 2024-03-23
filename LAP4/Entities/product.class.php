@@ -2,6 +2,7 @@
 require_once(__DIR__ . "/../config/db.class.php");
 
 class Product{
+    // ID sản phẩm, tên sản phẩm, ID danh mục, giá, số lượng, mô tả, và hình ảnh.
     public $productID;
     public $productName;
     public $cateID;
@@ -9,7 +10,7 @@ class Product{
     public $quantity;
     public $description;
     public $picture;
-
+//Initializes the Product class, setting product information from the parameters.
     public function __construct($pro_name, $cate_id, $price, $quantity,
     $desc, $picture){
         $this->productName = $pro_name;
@@ -36,6 +37,7 @@ class Product{
         $result = $db->query_execute($sql);
         return $result;
     }
+    // Returns a list of all products as array from the database.
     public static function list_product(){
         $db = new DB();
         $sql = "SELECT * FROM product";
